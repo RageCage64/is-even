@@ -10,3 +10,14 @@ int isEven(int x) {
     return x % 2 == 0;
 }
 ```
+
+## The bitwise AND way
+Contibuted by: [Jared0801](https://github.com/Jared0801)
+
+This way is slightly more optimized (depending on the compiler) and almost as short, but possibly harder to read.
+
+```c
+int isEven(int x) {
+    return (x & 0x1) == 0;
+}
+```
