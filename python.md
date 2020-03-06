@@ -24,3 +24,26 @@ def gen_even():
         yield even
         even = not even
 ```
+
+## isEven API
+Contributed by: [Tanner Collin](https://github.com/tannercollin)
+
+Uses the [isEven API](https://isevenapi.xyz) free tier.
+
+This tier only supports numbers 0 - 999,999. Upgrade to the Premium or Enterprise tier for more numbers.
+
+```python
+import requests
+
+ISEVEN_API = 'https://api.isevenapi.xyz/api/iseven/'
+
+def isEven(x):
+    try:
+        url = ISEVEN_API + str(x)
+        r = requests.get(url, timeout=5)
+        r.raise_for_status()
+        return r.json()['iseven']
+    except BaseException as e:
+        print('isEven API problem:', e)
+        return None
+```
