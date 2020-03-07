@@ -75,3 +75,18 @@ function isEven(x) {
     return !(x/2).toString().includes('.');
 }
 ```
+
+## The negating recursive way
+Contibuted by: [Serlych](https://github.com/Serlych)
+
+Probably will overflow you with happiness.
+
+```javascript
+function isEven(x) {
+  if (x === 0) {
+    return true;
+  }
+
+  return !isEven(Math.abs(x - 1));
+}
+```
