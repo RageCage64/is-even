@@ -1,6 +1,6 @@
-# C
+# Perl
 
-## The modulo way 
+## The easy way
 Contibuted by: [Akuseru1](https://github.com/Akuseru1)
 
 This is the way everyone in the Programmer Nullposting group says is the best.
