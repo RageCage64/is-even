@@ -25,6 +25,18 @@ def gen_even():
         even = not even
 ```
 
+## The "I'm a perl programmer" way
+Contributed by [Alexander Wong](https://github.com/awwong1/)
+
+Stringify and regex all of the things?
+
+```python
+import re
+
+def is_even(x):
+    return bool(re.search(r'[02468]$', str(x)))
+```
+
 ## isEven API
 Contributed by: [Tanner Collin](https://github.com/tannercollin)
 
