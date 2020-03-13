@@ -1,7 +1,7 @@
 # LUA
 
 ## The short way 
-Contibuted by: [Dautomne_](https://github.com/FernandoNSC5)
+Contributed by: [Dautomne_](https://github.com/FernandoNSC5)
 
 This is the way everyone in the Programmer Nullposting group says is the best.
 
