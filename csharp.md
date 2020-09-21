@@ -13,7 +13,7 @@ class IsEven {
     NumberToCheck = x;
   }
 
-  public bool calculate() {
+  public bool Calculate() {
     return NumberToCheck % 2 == 0;
   }
 }
