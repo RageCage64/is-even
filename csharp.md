@@ -18,3 +18,21 @@ class IsEven {
   }
 }
 ```
+
+## The Linq
+Contributed by: [Nick Martin](https://github.com/nickmartin1ee7)
+
+.
+
+```cs
+
+bool isEven = Determine
+    .With(2)
+    .IsEven();
+    
+static class Determine
+{
+    public static T With<T>(this T @this) => @this;
+    public static bool IsEven(this int number) => (number & 1) == 0;
+}
+```
