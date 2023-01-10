@@ -22,7 +22,7 @@ class IsEven {
 ## The Linq
 Contributed by: [Nick Martin](https://github.com/nickmartin1ee7)
 
-.
+Everything that can be Linq will be Linq.
 
 ```cs
 
