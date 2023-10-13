@@ -3,19 +3,33 @@
 ## The OOP<sup>2</sup>
 Contributed by: [Gammer0909](https://github.com/gammer0909)
 
+Yes, I know this is really a java thing, but we do this in C# too, but with XML documentation so it's "readable" now
+
 ```csharp
+/// <summary>
+/// Main Interfaces for the Abstract Factory Pattern
+/// </summary>
 interface IEven {
     bool IsEven(int n);
 }
 
+/// <summary>
+/// Main Interfaces for the Abstract Factory Pattern
+/// </summary>
 interface IOdd {
     bool IsOdd(int n);
 }
 
+/// <summary>
+/// Abstraction of an integer that we can extend to create even and odd numbers; unlike the int struct
+/// </summary>
 abstract class Number {
     int n;
 }
 
+/// <summary>
+/// Factory class that returns a number based on whether it is even or odd
+/// </summary>
 class NumberFactory {
     public static Number GetNumber(int n) {
         if (n % 2 == 0) {
@@ -26,19 +40,36 @@ class NumberFactory {
     }
 }
 
+/// <summary>
+/// Concrete implementation of an even number
+/// </summary>
 class EvenNumber : Number, IEven {
     public EvenNumber(int n) {
         this.n = n;
     }
 
+    /// <summary>
+    /// Checks if a given number, n, is even, but of course it's even, this is an EvenNumber.
+    /// </summary>
     public bool IsEven(int n) {
         return true;
     }
 }
 
+/// <summary>
+/// Concrete implementation of an odd number
+/// </summary>
 class OddNumber : Number, IOdd {
     public OddNumber(int n) {
         this.n = n;
+    }
+
+    /// <summary>
+    /// Checks if a given number, n, is odd, but of course it's odd, this is an OddNumber.
+    /// </summary>
+    /// <param name="n">The number to check</param>
+    public bool isOdd(int n) {
+        return true;
     }
 }
 
